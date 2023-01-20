@@ -12,6 +12,24 @@
         android:theme="@style/Theme.TeoretickéZákladyInformatiky"
         tools:targetApi="31">
         <activity
+            android:name=".KonecnyAutomat6"
+            android:exported="false" />
+        <activity
+            android:name=".KonecnyAutomat5"
+            android:exported="false" />
+        <activity
+            android:name=".KonecnyAutomat4"
+            android:exported="false" />
+        <activity
+            android:name=".KonecnyAutomat3"
+            android:exported="false" />
+        <activity
+            android:name=".KonecnyAutomat2"
+            android:exported="false" />
+        <activity
+            android:name=".KonecnyAutomat1"
+            android:exported="false" />
+        <activity
             android:name=".AbecedaSlovoJazyk10"
             android:exported="false" />
         <activity
