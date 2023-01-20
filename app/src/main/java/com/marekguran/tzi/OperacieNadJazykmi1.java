@@ -54,7 +54,7 @@ public class OperacieNadJazykmi1 extends AppCompatActivity {
         styri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                styri.setBackgroundColor(Color.parseColor("#3DDC84"));
+                styri.setBackgroundColor(Color.parseColor("#FF0000"));
                 text.setVisibility(View.VISIBLE);
 
             }

@@ -37,7 +37,9 @@
         android:layout_marginTop="20dp"
         android:inputType="text"
         android:text="δ:QxX ▶ Q"
-        android:layout_below="@id/otazka"/>
+        android:layout_below="@id/otazka"
+        android:textSize="18sp"
+        style="@style/Widget.Material3.Button"/>
 
     <Button
         android:id="@+id/btn_2"
@@ -47,7 +49,9 @@
         android:layout_marginRight="20dp"
         android:inputType="text"
         android:text="δ:QxX ▶ P(Q)"
-        android:layout_below="@id/btn_1"/>
+        android:layout_below="@id/btn_1"
+        android:textSize="18sp"
+        style="@style/Widget.Material3.Button"/>
 
     <TextView
         android:id="@+id/explanation"
@@ -69,7 +73,9 @@
         android:layout_marginEnd="20dp"
         android:layout_marginTop="20dp"
         android:text="Ďalej"
-        android:layout_below="@id/explanation"/>
+        android:layout_below="@id/explanation"
+        android:textSize="18sp"
+        style="@style/Widget.Material3.Button"/>
 
     <Button
         android:id="@+id/back"
@@ -79,6 +85,8 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:text="Späť"
-        android:layout_below="@id/explanation"/>
+        android:layout_below="@id/explanation"
+        android:textSize="18sp"
+        style="@style/Widget.Material3.Button"/>
 
 </RelativeLayout>
