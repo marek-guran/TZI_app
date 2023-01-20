@@ -14,14 +14,14 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/abeceda_slovo_jazyk"
+            style="@style/Widget.Material3.CardView.Filled"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_columnWeight="1"
             android:layout_margin="5dp"
-            app:cardBackgroundColor="@color/black"
-            app:cardCornerRadius="20dp"
             android:clickable="true"
-            android:focusable="true">
+            android:focusable="true"
+            app:cardCornerRadius="20dp">
 
             <ImageView
                 android:layout_width="100dp"
@@ -41,14 +41,14 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/konecny_automat"
+            style="@style/Widget.Material3.CardView.Filled"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_columnWeight="1"
             android:layout_margin="5dp"
-            app:cardBackgroundColor="@color/black"
-            app:cardCornerRadius="20dp"
             android:clickable="true"
-            android:focusable="true">
+            android:focusable="true"
+            app:cardCornerRadius="20dp">
 
             <ImageView
                 android:layout_width="80dp"
@@ -69,14 +69,14 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/operacie_nad_jazykmi"
+            style="@style/Widget.Material3.CardView.Filled"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_columnWeight="1"
             android:layout_margin="5dp"
-            app:cardBackgroundColor="@color/black"
-            app:cardCornerRadius="20dp"
             android:clickable="true"
-            android:focusable="true">
+            android:focusable="true"
+            app:cardCornerRadius="20dp">
 
             <ImageView
                 android:layout_width="100dp"
