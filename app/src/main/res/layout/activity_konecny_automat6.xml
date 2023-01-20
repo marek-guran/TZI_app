@@ -11,7 +11,7 @@
         android:id="@+id/pocet_otazok_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Otázka: 6/8"
+        android:text="Otázka: 6/7"
         android:layout_marginTop="10dp"
         android:textAlignment="center"
         android:textSize="24sp"/>
@@ -55,7 +55,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:textSize="16sp"
-        android:text="Prechodová funkcia konečného automatu je δ:QxX ▶ Q "
+        android:text="Konečný automat A je deterministický. V každom stave je jednoznačne určené do akého stavu a na akýkoľvek symbol sa automat automaticky dostane."
         android:layout_below="@id/btn_2"
         android:visibility="gone"/>
 

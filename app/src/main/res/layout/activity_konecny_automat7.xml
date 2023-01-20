@@ -5,13 +5,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".KonecnyAutomat5">
+    tools:context=".KonecnyAutomat7">
 
     <TextView
         android:id="@+id/pocet_otazok_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Otázka: 5/7"
+        android:text="Otázka: 7/7"
         android:layout_marginTop="10dp"
         android:textAlignment="center"
         android:textSize="24sp"/>
@@ -20,7 +20,7 @@
         android:id="@+id/otazka"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Rozhodnite, ktorá funkcia je prechodovou funkciou konečného automatu:"
+        android:text="Majme konečný automat A = (Q, X, δ, q0, F), kde Q = {q0, q1}, X = {0,1}, F = {q0} a δ : δ (q0, 0) = q1, δ (q0, 1) = q0, δ (q1, 0) = q0, δ (q1, 1) = q1. Určite počiatočnú konfiguráciu automatu."
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:textSize="20sp"
@@ -36,7 +36,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
         android:inputType="text"
-        android:text="δ:QxX ▶ Q"
+        android:text="(q1, 00)"
         android:layout_below="@id/otazka"/>
 
     <Button
@@ -46,8 +46,28 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:inputType="text"
-        android:text="δ:QxX ▶ P(Q)"
+        android:text="(q1, 001)"
         android:layout_below="@id/btn_1"/>
+
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="text"
+        android:text="(q0,001)"
+        android:layout_below="@id/btn_2"/>
+
+    <Button
+        android:id="@+id/btn_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="text"
+        android:text="(q1, ɛ)"
+        android:layout_below="@id/btn_3"/>
 
     <TextView
         android:id="@+id/explanation"
@@ -57,19 +77,9 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:textSize="16sp"
-        android:text="Prechodová funkcia konečného automatu je δ:QxX ▶ Q "
-        android:layout_below="@id/btn_2"
+        android:text="Jednou z možných počiatočných konfigurácií konečného automatu A je (q0, 001), kde q0 je počiatočný stav a 001 nejaké vstupné slovo."
+        android:layout_below="@id/btn_4"
         android:visibility="gone"/>
-
-    <Button
-        android:id="@+id/next"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="20dp"
-        android:text="Ďalej"
-        android:layout_below="@id/explanation"/>
 
     <Button
         android:id="@+id/back"

@@ -11,7 +11,7 @@
         android:id="@+id/pocet_otazok_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Otázka: 4/8"
+        android:text="Otázka: 4/7"
         android:layout_marginTop="10dp"
         android:textAlignment="center"
         android:textSize="24sp"/>
