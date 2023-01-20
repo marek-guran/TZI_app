@@ -8,10 +8,25 @@
     tools:context=".KonecnyAutomat5">
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?attr/colorSurfaceVariant"/>
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/domov"
+        android:background="?attr/colorSurfaceVariant"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <TextView
         android:id="@+id/pocet_otazok_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Otázka: 5/7"
+        android:textColor="?attr/colorSecondary"
         android:layout_marginTop="10dp"
         android:textAlignment="center"
         android:textSize="24sp"/>
