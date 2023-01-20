@@ -35,7 +35,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="50dp"
                 android:text="Abeceda, slovo jazyk"
-                android:textColor="@color/white" />
+                android:textColor="?attr/colorSecondary" />
 
         </androidx.cardview.widget.CardView>
 
@@ -63,7 +63,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="50dp"
                 android:text="Konečný Automat"
-                android:textColor="@color/white" />
+                android:textColor="?attr/colorSecondary" />
 
         </androidx.cardview.widget.CardView>
 
@@ -82,6 +82,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
                 android:src="@drawable/operacie_nad_jazykmi" />
 
             <TextView
@@ -90,7 +91,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="50dp"
                 android:text="Oprácie nad jazykmi"
-                android:textColor="@color/white" />
+                android:textColor="?attr/colorSecondary" />
 
         </androidx.cardview.widget.CardView>
 
