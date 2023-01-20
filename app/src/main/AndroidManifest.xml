@@ -12,6 +12,36 @@
         android:theme="@style/Theme.TeoretickéZákladyInformatiky"
         tools:targetApi="31">
         <activity
+            android:name=".OperacieNadJazykmi10"
+            android:exported="false" />
+        <activity
+            android:name=".OperacieNadJazykmi9"
+            android:exported="false" />
+        <activity
+            android:name=".OperacieNadJazykmi8"
+            android:exported="false" />
+        <activity
+            android:name=".OperacieNadJazykmi7"
+            android:exported="false" />
+        <activity
+            android:name=".OperacieNadJazykmi6"
+            android:exported="false" />
+        <activity
+            android:name=".OperacieNadJazykmi5"
+            android:exported="false" />
+        <activity
+            android:name=".OperacieNadJazykmi4"
+            android:exported="false" />
+        <activity
+            android:name=".OperacieNadJazykmi3"
+            android:exported="false" />
+        <activity
+            android:name=".OperacieNadJazykmi2"
+            android:exported="false" />
+        <activity
+            android:name=".OperacieNadJazykmi1"
+            android:exported="false" />
+        <activity
             android:name=".KonecnyAutomat7"
             android:exported="false" />
         <activity
