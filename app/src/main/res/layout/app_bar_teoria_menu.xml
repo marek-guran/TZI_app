@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeoriaMenu">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:src="@drawable/domov"
+            android:background="#00000000"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_gravity="end"
+            app:layout_anchor="@id/toolbar"
+            app:layout_anchorGravity="top|end"
+            android:elevation="10dp"
+            />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.TeoretickéZákladyInformatiky.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorSurfaceVariant"
+            app:popupTheme="@style/Theme.TeoretickéZákladyInformatiky.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    </FrameLayout>
+
+    <include layout="@layout/content_teoria_menu" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         CardView abeceda_slovo_jazyk = (CardView) findViewById(R.id.abeceda_slovo_jazyk);
         CardView konecny_automat = (CardView) findViewById(R.id.konecny_automat);
         CardView operacie_nad_jazykmi = (CardView) findViewById(R.id.operacie_nad_jazykmi);
+        CardView teoria = (CardView) findViewById(R.id.teoria);
 
         abeceda_slovo_jazyk.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +40,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, OperacieNadJazykmi1.class));
+                finish();
+
+            }
+        });
+        teoria.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, TeoriaMenu.class));
                 finish();
 
             }

@@ -9,10 +9,15 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/Theme.TeoretickéZákladyInformatiky"
-        android:largeHeap="true"
         tools:targetApi="33">
+        <activity
+            android:name=".TeoriaMenu"
+            android:exported="false"
+            android:label="@string/title_activity_teoria_menu"
+            android:theme="@style/Theme.TeoretickéZákladyInformatiky.NoActionBar" />
         <activity
             android:name=".OperacieNadJazykmi10"
             android:exported="false" />
