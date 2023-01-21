@@ -180,6 +180,29 @@
                 android:layout_marginLeft="20dp"
                 app:layout_constraintTop_toBottomOf="@id/dka_prechod_N"/>
 
+            <TextView
+                android:id="@+id/dka_konfiguracia_nadpis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="Konfigurácia, výpočet, akceptovaný jazyk"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/dka_prechod_Z" />
+
+            <TextView
+                android:id="@+id/dka_konfiguracia_vysvetlenie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/dka_konfiguracia_vysvetlenie"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/dka_konfiguracia_nadpis" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
