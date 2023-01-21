@@ -469,6 +469,29 @@
                 android:layout_marginLeft="20dp"
                 app:layout_constraintTop_toBottomOf="@id/priklad_nka_text"/>
 
+            <TextView
+                android:id="@+id/vypocet_nka_nadpis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="Výpočet automatu, jazyk akceptovaný NKA"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/nka_zapis_obrazok" />
+
+            <TextView
+                android:id="@+id/nka_vypocet_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/nka_text2"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/vypocet_nka_nadpis" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
