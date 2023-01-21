@@ -426,6 +426,39 @@
                 android:textSize="18sp"
                 app:layout_constraintTop_toBottomOf="@+id/nka_nadpis" />
 
+            <TextView
+                android:id="@+id/priklad_nka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="Príklad"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/nka_vysvetlenie_text" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/priklad_nka_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.Material3.CardView.Filled"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintTop_toBottomOf="@id/priklad_nka">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/nka_priklad"
+                    android:textColor="?attr/colorSecondary"
+                    android:textSize="18sp" />
+
+            </androidx.cardview.widget.CardView>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
