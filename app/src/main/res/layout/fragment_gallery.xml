@@ -160,6 +160,26 @@
                 android:textSize="18sp"
                 app:layout_constraintTop_toBottomOf="@+id/dka_graf_obrazok" />
 
+            <ImageView
+                android:id="@+id/dka_prechod_N"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/prechod_n"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintTop_toBottomOf="@id/dka_vysvetlenie_graf"/>
+
+            <ImageView
+                android:id="@+id/dka_prechod_Z"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/prechod_z"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintTop_toBottomOf="@id/dka_prechod_N"/>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
