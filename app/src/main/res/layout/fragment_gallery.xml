@@ -362,7 +362,6 @@
                 app:layout_constraintTop_toBottomOf="@id/ka_priklad1">
 
                 <TextView
-                    android:id="@+id/text_nad_priklad2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
@@ -371,6 +370,16 @@
                     android:textSize="18sp" />
 
             </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/ka_priklad2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/priklad_ka2"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintTop_toBottomOf="@id/priklad_ka_text2"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
