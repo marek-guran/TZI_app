@@ -72,6 +72,94 @@
 
             </androidx.cardview.widget.CardView>
 
+            <TextView
+                android:id="@+id/zapis_dka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="Zápis konečného automatu tabuľkou"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/priklad_dka_text" />
+
+            <TextView
+                android:id="@+id/dka_zapis_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/zapis_dka"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/zapis_dka" />
+
+            <ImageView
+                android:id="@+id/dka_zapis_obrazok"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/dka_zapis_priklad"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintTop_toBottomOf="@id/dka_zapis_text"/>
+
+            <TextView
+                android:id="@+id/dka_vysvetlenie_obrazok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/dka_vysvetlenie_obrazok"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/dka_zapis_obrazok" />
+
+            <TextView
+                android:id="@+id/zapis_graficky_dka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="Grafické znázornenie konečného automatu"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/dka_vysvetlenie_obrazok" />
+
+            <TextView
+                android:id="@+id/dka_graficke_znazornenie_vysvetlenie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/dka_graficke_znazornenie_text"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/zapis_graficky_dka" />
+
+            <ImageView
+                android:id="@+id/dka_graf_obrazok"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/dka_graf"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintTop_toBottomOf="@id/dka_graficke_znazornenie_vysvetlenie"/>
+
+            <TextView
+                android:id="@+id/dka_vysvetlenie_graf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/dka_graf_text"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/dka_graf_obrazok" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
