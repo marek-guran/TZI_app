@@ -259,6 +259,29 @@
 
             </androidx.cardview.widget.CardView>
 
+            <TextView
+                android:id="@+id/vypocet_dka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="Výpočet konečného automatu"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/priklad_pociatocna_konfiguracia_dka_text" />
+
+            <TextView
+                android:id="@+id/vypocet_dka_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/dka_pociatocna_konfiguracia_priklad_text"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/vypocet_dka" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
