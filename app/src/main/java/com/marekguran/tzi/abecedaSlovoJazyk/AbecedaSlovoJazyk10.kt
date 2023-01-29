@@ -1,4 +1,4 @@
-package com.marekguran.tzi
+package com.marekguran.tzi.abecedaSlovoJazyk
 
 import android.content.Intent
 import android.graphics.Color
@@ -8,38 +8,35 @@ import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.marekguran.tzi.MainActivity
+import com.marekguran.tzi.R
 
-class OperacieNadJazykmi7 : AppCompatActivity() {
+class AbecedaSlovoJazyk10 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_operacie_nad_jazykmi7)
+        setContentView(R.layout.activity_abeceda_slovo_jazyk10)
         val jedna = findViewById<View>(R.id.btn_1) as Button
         val dva = findViewById<View>(R.id.btn_2) as Button
-        val next = findViewById<View>(R.id.next) as Button
         val back = findViewById<View>(R.id.back) as Button
         val text = findViewById<View>(R.id.explanation) as TextView
         val home = findViewById<View>(R.id.home) as ImageButton
         home.setOnClickListener {
-            startActivity(Intent(this@OperacieNadJazykmi7, MainActivity::class.java))
+            startActivity(Intent(this@AbecedaSlovoJazyk10, MainActivity::class.java))
             finish()
         }
-        jedna.setOnClickListener { jedna.setBackgroundColor(Color.parseColor("#3DDC84")) }
-        dva.setOnClickListener {
-            dva.setBackgroundColor(Color.parseColor("#FF0000"))
+        jedna.setOnClickListener {
+            jedna.setBackgroundColor(Color.parseColor("#FF0000"))
             text.visibility = View.VISIBLE
         }
-        next.setOnClickListener {
-            startActivity(Intent(this@OperacieNadJazykmi7, OperacieNadJazykmi8::class.java))
-            finish()
-        }
+        dva.setOnClickListener { dva.setBackgroundColor(Color.parseColor("#3DDC84")) }
         back.setOnClickListener {
-            startActivity(Intent(this@OperacieNadJazykmi7, OperacieNadJazykmi6::class.java))
+            startActivity(Intent(this@AbecedaSlovoJazyk10, AbecedaSlovoJazyk9::class.java))
             finish()
         }
     }
     @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
-        startActivity(Intent(this@OperacieNadJazykmi7, OperacieNadJazykmi6::class.java))
+        startActivity(Intent(this@AbecedaSlovoJazyk10, AbecedaSlovoJazyk9::class.java))
         finish()
     }
 }

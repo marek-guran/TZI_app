@@ -10,6 +10,10 @@ import android.view.View
 import android.view.View.OnFocusChangeListener
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
+import com.marekguran.tzi.abecedaSlovoJazyk.AbecedaSlovoJazyk1
+import com.marekguran.tzi.konecnyAutomat.KonecnyAutomat1
+import com.marekguran.tzi.operacieNadJazykmi.OperacieNadJazykmi1
+import com.marekguran.tzi.teoria.TeoriaMenu
 
 class MainActivity : AppCompatActivity() {
     @SuppressLint("ClickableViewAccessibility")

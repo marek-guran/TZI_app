@@ -1,4 +1,4 @@
-package com.marekguran.tzi
+package com.marekguran.tzi.teoria
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,6 +11,8 @@ import androidx.navigation.ui.AppBarConfiguration.Builder
 import androidx.navigation.ui.NavigationUI.navigateUp
 import androidx.navigation.ui.NavigationUI.setupActionBarWithNavController
 import androidx.navigation.ui.NavigationUI.setupWithNavController
+import com.marekguran.tzi.MainActivity
+import com.marekguran.tzi.R
 import com.marekguran.tzi.databinding.ActivityTeoriaMenuBinding
 
 class TeoriaMenu : AppCompatActivity() {

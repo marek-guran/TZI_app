@@ -1,4 +1,4 @@
-package com.marekguran.tzi
+package com.marekguran.tzi.operacieNadJazykmi
 
 import android.content.Intent
 import android.graphics.Color
@@ -8,6 +8,8 @@ import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.marekguran.tzi.MainActivity
+import com.marekguran.tzi.R
 
 class OperacieNadJazykmi1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

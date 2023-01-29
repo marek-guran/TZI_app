@@ -1,4 +1,4 @@
-package com.marekguran.tzi
+package com.marekguran.tzi.operacieNadJazykmi
 
 import android.content.Intent
 import android.graphics.Color
@@ -8,11 +8,13 @@ import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.marekguran.tzi.MainActivity
+import com.marekguran.tzi.R
 
-class OperacieNadJazykmi4 : AppCompatActivity() {
+class OperacieNadJazykmi9 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_operacie_nad_jazykmi4)
+        setContentView(R.layout.activity_operacie_nad_jazykmi9)
         val jedna = findViewById<View>(R.id.btn_1) as Button
         val dva = findViewById<View>(R.id.btn_2) as Button
         val tri = findViewById<View>(R.id.btn_3) as Button
@@ -22,34 +24,34 @@ class OperacieNadJazykmi4 : AppCompatActivity() {
         val text = findViewById<View>(R.id.explanation) as TextView
         val home = findViewById<View>(R.id.home) as ImageButton
         home.setOnClickListener {
-            startActivity(Intent(this@OperacieNadJazykmi4, MainActivity::class.java))
+            startActivity(Intent(this@OperacieNadJazykmi9, MainActivity::class.java))
             finish()
         }
         jedna.setOnClickListener {
             jedna.setBackgroundColor(Color.parseColor("#FF0000"))
             text.visibility = View.VISIBLE
         }
-        dva.setOnClickListener { dva.setBackgroundColor(Color.parseColor("#3DDC84")) }
+        dva.setOnClickListener {
+            dva.setBackgroundColor(Color.parseColor("#FF0000"))
+            text.visibility = View.VISIBLE
+        }
         tri.setOnClickListener {
             tri.setBackgroundColor(Color.parseColor("#FF0000"))
             text.visibility = View.VISIBLE
         }
-        styri.setOnClickListener {
-            styri.setBackgroundColor(Color.parseColor("#FF0000"))
-            text.visibility = View.VISIBLE
-        }
+        styri.setOnClickListener { styri.setBackgroundColor(Color.parseColor("#3DDC84")) }
         next.setOnClickListener {
-            startActivity(Intent(this@OperacieNadJazykmi4, OperacieNadJazykmi5::class.java))
+            startActivity(Intent(this@OperacieNadJazykmi9, OperacieNadJazykmi10::class.java))
             finish()
         }
         back.setOnClickListener {
-            startActivity(Intent(this@OperacieNadJazykmi4, OperacieNadJazykmi3::class.java))
+            startActivity(Intent(this@OperacieNadJazykmi9, OperacieNadJazykmi8::class.java))
             finish()
         }
     }
     @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
-        startActivity(Intent(this@OperacieNadJazykmi4, OperacieNadJazykmi3::class.java))
+        startActivity(Intent(this@OperacieNadJazykmi9, OperacieNadJazykmi8::class.java))
         finish()
     }
 }
