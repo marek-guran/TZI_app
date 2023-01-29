@@ -23,7 +23,7 @@
             app:layout_anchor="@id/toolbar"
             app:layout_anchorGravity="top|end"
             android:elevation="10dp"
-            android:contentDescription="Home" />
+            android:contentDescription="Domov" />
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
