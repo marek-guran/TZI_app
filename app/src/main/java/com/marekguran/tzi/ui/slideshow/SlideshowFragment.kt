@@ -18,12 +18,7 @@ class SlideshowFragment : Fragment() {
             SlideshowViewModel::class.java
         )
         binding = FragmentSlideshowBinding.inflate(inflater, container, false)
-        val root: View = binding!!.root
-        val textView = binding!!.textSlideshow
-        slideshowViewModel.text.observe(viewLifecycleOwner) { text: String? ->
-            textView.text = text
-        }
-        return root
+        return binding!!.root
     }
 
     override fun onDestroyView() {
