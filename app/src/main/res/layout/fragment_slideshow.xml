@@ -152,6 +152,12 @@
 
             </androidx.cardview.widget.CardView>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n\n"
+                app:layout_constraintTop_toBottomOf="@id/priklad_za"/>
+
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,7 +10,7 @@
 
     <string name="menu_home">Formálne Jazyky</string>
     <string name="menu_gallery">Konečné Automaty</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_slideshow">Zásobníkové Automaty</string>
 
     <string name="abeceda_vysvetlenie">Abecedou rozumieme neprázdnu konečnú množinu symbolov. Prvky abecedy nazývame písmená alebo tiež symboly abecedy. Symboly abecedy sú základné objekty, z ktorých budeme vytvárať zložitejšie štruktúry.
     </string>
