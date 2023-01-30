@@ -10,6 +10,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.marekguran.tzi.MainActivity
 import com.marekguran.tzi.R
+import com.marekguran.tzi.kvizy.Kvizy
 
 class AbecedaSlovoJazyk4 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,7 +23,7 @@ class AbecedaSlovoJazyk4 : AppCompatActivity() {
         val text = findViewById<View>(R.id.explanation) as TextView
         val home = findViewById<View>(R.id.home) as ImageButton
         home.setOnClickListener {
-            startActivity(Intent(this@AbecedaSlovoJazyk4, MainActivity::class.java))
+            startActivity(Intent(this@AbecedaSlovoJazyk4, Kvizy::class.java))
             finish()
         }
         jedna.setOnClickListener { jedna.setBackgroundColor(Color.parseColor("#3DDC84")) }

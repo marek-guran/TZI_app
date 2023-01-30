@@ -1,44 +1,45 @@
-package com.marekguran.tzi
+package com.marekguran.tzi.kvizy
 
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
-import android.annotation.SuppressLint
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MotionEvent
 import android.view.View
-import android.view.View.OnFocusChangeListener
-import androidx.appcompat.app.AppCompatActivity
+import android.widget.ImageButton
 import androidx.cardview.widget.CardView
-import com.marekguran.tzi.kvizy.Kvizy
-import com.marekguran.tzi.teoria.TeoriaMenu
+import com.marekguran.tzi.MainActivity
+import com.marekguran.tzi.R
+import com.marekguran.tzi.abecedaSlovoJazyk.AbecedaSlovoJazyk1
+import com.marekguran.tzi.konecnyAutomat.KonecnyAutomat1
+import com.marekguran.tzi.operacieNadJazykmi.OperacieNadJazykmi1
 
-class MainActivity : AppCompatActivity() {
-    @SuppressLint("ClickableViewAccessibility")
+class Kvizy : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        val kvizy = findViewById<View>(R.id.kvizy) as CardView
-        val priklady = findViewById<View>(R.id.priklady) as CardView
-        val testy = findViewById<View>(R.id.testy) as CardView
-        val teoria = findViewById<View>(R.id.teoria) as CardView
-        kvizy.setOnClickListener {
-            startActivity(Intent(this@MainActivity, Kvizy::class.java))
+        setContentView(R.layout.activity_kvizy)
+        val abecedaSlovoJazyk = findViewById<View>(R.id.abeceda_slovo_jazyk) as CardView
+        val konecnyAutomat = findViewById<View>(R.id.konecny_automat) as CardView
+        val operacieNadJazykmi = findViewById<View>(R.id.operacie_nad_jazykmi) as CardView
+        val home = findViewById<View>(R.id.home) as ImageButton
+        home.setOnClickListener {
+            startActivity(Intent(this@Kvizy, MainActivity::class.java))
             finish()
         }
-        priklady.setOnClickListener {
-            startActivity(Intent(this@MainActivity, priklady::class.java))
+        abecedaSlovoJazyk.setOnClickListener {
+            startActivity(Intent(this@Kvizy, AbecedaSlovoJazyk1::class.java))
             finish()
         }
-        testy.setOnClickListener {
-            startActivity(Intent(this@MainActivity, testy::class.java))
+        konecnyAutomat.setOnClickListener {
+            startActivity(Intent(this@Kvizy, KonecnyAutomat1::class.java))
             finish()
         }
-        teoria.setOnClickListener {
-            startActivity(Intent(this@MainActivity, TeoriaMenu::class.java))
+        operacieNadJazykmi.setOnClickListener {
+            startActivity(Intent(this@Kvizy, OperacieNadJazykmi1::class.java))
             finish()
         }
-        kvizy.setOnTouchListener { view, event ->
+        abecedaSlovoJazyk.setOnTouchListener { view, event ->
             if (event.action == MotionEvent.ACTION_DOWN) {
                 val scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 0.9f)
                 val scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 0.9f)
@@ -58,7 +59,7 @@ class MainActivity : AppCompatActivity() {
             }
             false
         }
-        priklady.setOnTouchListener { view, event ->
+        konecnyAutomat.setOnTouchListener { view, event ->
             if (event.action == MotionEvent.ACTION_DOWN) {
                 val scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 0.9f)
                 val scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 0.9f)
@@ -78,7 +79,7 @@ class MainActivity : AppCompatActivity() {
             }
             false
         }
-        testy.setOnTouchListener { view, event ->
+        operacieNadJazykmi.setOnTouchListener { view, event ->
             if (event.action == MotionEvent.ACTION_DOWN) {
                 val scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 0.9f)
                 val scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 0.9f)
@@ -98,27 +99,7 @@ class MainActivity : AppCompatActivity() {
             }
             false
         }
-        teoria.setOnTouchListener { view, event ->
-            if (event.action == MotionEvent.ACTION_DOWN) {
-                val scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 0.9f)
-                val scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 0.9f)
-                scaleDownX.duration = 150
-                scaleDownY.duration = 150
-                val scaleDown = AnimatorSet()
-                scaleDown.play(scaleDownX).with(scaleDownY)
-                scaleDown.start()
-            } else if (event.action == MotionEvent.ACTION_UP) {
-                val scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 1f)
-                val scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 1f)
-                scaleDownX.duration = 150
-                scaleDownY.duration = 150
-                val scaleDown = AnimatorSet()
-                scaleDown.play(scaleDownX).with(scaleDownY)
-                scaleDown.start()
-            }
-            false
-        }
-        kvizy.onFocusChangeListener = OnFocusChangeListener { view, hasFocus ->
+        abecedaSlovoJazyk.onFocusChangeListener = View.OnFocusChangeListener { view, hasFocus ->
             if (hasFocus) {
                 val scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 0.9f)
                 val scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 0.9f)
@@ -137,7 +118,7 @@ class MainActivity : AppCompatActivity() {
                 scaleDown.start()
             }
         }
-        priklady.onFocusChangeListener = OnFocusChangeListener { view, hasFocus ->
+        konecnyAutomat.onFocusChangeListener = View.OnFocusChangeListener { view, hasFocus ->
             if (hasFocus) {
                 val scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 0.9f)
                 val scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 0.9f)
@@ -156,26 +137,7 @@ class MainActivity : AppCompatActivity() {
                 scaleDown.start()
             }
         }
-        testy.onFocusChangeListener = OnFocusChangeListener { view, hasFocus ->
-            if (hasFocus) {
-                val scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 0.9f)
-                val scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 0.9f)
-                scaleDownX.duration = 150
-                scaleDownY.duration = 150
-                val scaleDown = AnimatorSet()
-                scaleDown.play(scaleDownX).with(scaleDownY)
-                scaleDown.start()
-            } else {
-                val scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 1f)
-                val scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 1f)
-                scaleDownX.duration = 150
-                scaleDownY.duration = 150
-                val scaleDown = AnimatorSet()
-                scaleDown.play(scaleDownX).with(scaleDownY)
-                scaleDown.start()
-            }
-        }
-        teoria.onFocusChangeListener = OnFocusChangeListener { view, hasFocus ->
+        operacieNadJazykmi.onFocusChangeListener = View.OnFocusChangeListener { view, hasFocus ->
             if (hasFocus) {
                 val scaleDownX = ObjectAnimator.ofFloat(view, "scaleX", 0.9f)
                 val scaleDownY = ObjectAnimator.ofFloat(view, "scaleY", 0.9f)

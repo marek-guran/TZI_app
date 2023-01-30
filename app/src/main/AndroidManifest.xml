@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-feature android:name="android.software.leanback" android:required="false" />
+
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
     <uses-feature
         android:name="android.hardware.touchscreen"
         android:required="false" />
-    <uses-feature android:name="android.software.chrome_os" android:required="false" />
+    <uses-feature
+        android:name="android.software.chrome_os"
+        android:required="false" />
 
     <application
         android:name=".DynamicColors"
         android:allowBackup="true"
+        android:banner="@mipmap/ic_banner"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:banner="@mipmap/ic_banner"
         android:label="@string/app_name"
         android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/Theme.TeoretickéZákladyInformatiky"
         tools:targetApi="33">
+        <activity
+            android:name=".kvizy.Kvizy"
+            android:exported="false" />
         <activity
             android:name=".teoria.TeoriaMenu"
             android:exported="false"

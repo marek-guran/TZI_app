@@ -13,89 +13,6 @@
         tools:context=".MainActivity">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/abeceda_slovo_jazyk"
-            style="@style/Widget.Material3.CardView.Filled"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_columnWeight="1"
-            android:layout_margin="5dp"
-            android:clickable="true"
-            android:focusable="true"
-            app:cardCornerRadius="20dp">
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:src="@drawable/abeceda_slovo_jazyk" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="50dp"
-                android:text="Abeceda, slovo jazyk"
-                android:textColor="?attr/colorSecondary" />
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/konecny_automat"
-            style="@style/Widget.Material3.CardView.Filled"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_columnWeight="1"
-            android:layout_margin="5dp"
-            android:clickable="true"
-            android:focusable="true"
-            app:cardCornerRadius="20dp">
-
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="10dp"
-                android:src="@drawable/konecny_automat" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="50dp"
-                android:text="Konečné Automaty"
-                android:textColor="?attr/colorSecondary" />
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/operacie_nad_jazykmi"
-            style="@style/Widget.Material3.CardView.Filled"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_columnWeight="1"
-            android:layout_margin="5dp"
-            android:clickable="true"
-            android:focusable="true"
-            app:cardCornerRadius="20dp">
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="10dp"
-                android:src="@drawable/operacie_nad_jazykmi" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="50dp"
-                android:text="Oprácie nad jazykmi"
-                android:textColor="?attr/colorSecondary" />
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
             android:id="@+id/teoria"
             style="@style/Widget.Material3.CardView.Filled"
             android:layout_width="150dp"
@@ -119,6 +36,90 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="50dp"
                 android:text="Teória"
+                android:textColor="?attr/colorSecondary" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/priklady"
+            style="@style/Widget.Material3.CardView.Filled"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/priklady" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:text="Príklady"
+                android:textColor="?attr/colorSecondary" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/kvizy"
+            style="@style/Widget.Material3.CardView.Filled"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/kvizy" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:text="Kvízy"
+                android:textColor="?attr/colorSecondary" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/testy"
+            style="@style/Widget.Material3.CardView.Filled"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/testy" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:text="Testy"
                 android:textColor="?attr/colorSecondary" />
 
         </androidx.cardview.widget.CardView>

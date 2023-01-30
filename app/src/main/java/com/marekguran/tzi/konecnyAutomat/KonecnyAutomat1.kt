@@ -10,6 +10,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.marekguran.tzi.MainActivity
 import com.marekguran.tzi.R
+import com.marekguran.tzi.kvizy.Kvizy
 
 class KonecnyAutomat1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +24,7 @@ class KonecnyAutomat1 : AppCompatActivity() {
         val text = findViewById<View>(R.id.explanation) as TextView
         val home = findViewById<View>(R.id.home) as ImageButton
         home.setOnClickListener {
-            startActivity(Intent(this@KonecnyAutomat1, MainActivity::class.java))
+            startActivity(Intent(this@KonecnyAutomat1, Kvizy::class.java))
             finish()
         }
         jedna.setOnClickListener {
@@ -46,7 +47,7 @@ class KonecnyAutomat1 : AppCompatActivity() {
     }
     @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
-        startActivity(Intent(this@KonecnyAutomat1, MainActivity::class.java))
+        startActivity(Intent(this@KonecnyAutomat1, Kvizy::class.java))
         finish()
     }
 }
