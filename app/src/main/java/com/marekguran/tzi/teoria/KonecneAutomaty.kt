@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.marekguran.tzi.databinding.FragmentGalleryBinding
-import com.marekguran.tzi.ui.gallery.GalleryViewModel
 
 class KonecneAutomaty : Fragment() {
     private var binding: FragmentGalleryBinding? = null
@@ -15,9 +14,6 @@ class KonecneAutomaty : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
-        val galleryViewModel = ViewModelProvider(this).get(
-            GalleryViewModel::class.java
-        )
         binding = FragmentGalleryBinding.inflate(
             inflater,
             container,

@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.marekguran.tzi.databinding.FragmentHomeBinding
-import com.marekguran.tzi.ui.home.HomeViewModel
 
 class Abeceda : Fragment() {
     private var binding: FragmentHomeBinding? = null
@@ -15,9 +14,6 @@ class Abeceda : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
-        val homeViewModel = ViewModelProvider(this).get(
-            HomeViewModel::class.java
-        )
         binding = FragmentHomeBinding.inflate(
             inflater,
             container,
