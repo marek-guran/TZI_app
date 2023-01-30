@@ -16,40 +16,40 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/abeceda_slovo_jazyk_nadpis"
+                android:id="@+id/gramatika_nadpis"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="70dp"
-                android:text="Abeceda, slovo jazyfghdk"
+                android:text="Gramatika"
                 android:textAlignment="center"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/abeceda_vysvetlenie_nadpis"
+                android:id="@+id/gramatika_vysvetlenie_nadpis"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
-                android:text="Abeceda"
+                android:text="Definícia"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/abeceda_slovo_jazyk_nadpis" />
+                app:layout_constraintTop_toBottomOf="@+id/gramatika_nadpis" />
 
             <TextView
-                android:id="@+id/abeceda_vysvetlenie_text"
+                android:id="@+id/gramatika_vysvetlenie_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:text="@string/abeceda_vysvetlenie"
+                android:text="@string/gramatika_definicia"
                 android:textSize="18sp"
-                app:layout_constraintTop_toBottomOf="@+id/abeceda_vysvetlenie_nadpis" />
+                app:layout_constraintTop_toBottomOf="@+id/gramatika_vysvetlenie_nadpis" />
 
             <TextView
-                android:id="@+id/priklad_abeceda"
+                android:id="@+id/priklad_gramatika"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -58,10 +58,10 @@
                 android:text="Príklad"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/abeceda_vysvetlenie_text" />
+                app:layout_constraintTop_toBottomOf="@+id/gramatika_vysvetlenie_text" />
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/priklad_abeceda_text"
+                android:id="@+id/priklad_gramatika_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/Widget.Material3.CardView.Filled"
@@ -69,364 +69,17 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="5dp"
                 app:cardCornerRadius="20dp"
-                app:layout_constraintTop_toBottomOf="@id/priklad_abeceda">
+                app:layout_constraintTop_toBottomOf="@id/priklad_gramatika">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="@string/priklad_abeceda"
+                    android:text="@string/priklad_gramatika"
                     android:textColor="?attr/colorSecondary"
                     android:textSize="18sp" />
 
             </androidx.cardview.widget.CardView>
-
-            <TextView
-                android:id="@+id/slovo_retazec_vysvetlenie_nadpis"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="20dp"
-                android:text="Slovo, reťazec"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/priklad_abeceda_text" />
-
-            <TextView
-                android:id="@+id/slovo_retazec_vysvetlenie_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:text="@string/slovo_retazec_vysvetlenie"
-                android:textSize="18sp"
-                app:layout_constraintTop_toBottomOf="@+id/slovo_retazec_vysvetlenie_nadpis" />
-
-            <TextView
-                android:id="@+id/priklad_slovo_retazec"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="20dp"
-                android:text="Príklad"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/slovo_retazec_vysvetlenie_text" />
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/priklad_slovo_retazec_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                style="@style/Widget.Material3.CardView.Filled"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="5dp"
-                app:cardCornerRadius="20dp"
-                app:layout_constraintTop_toBottomOf="@id/priklad_slovo_retazec">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:text="@string/priklad_slovo_retazec"
-                    android:textColor="?attr/colorSecondary"
-                    android:textSize="18sp" />
-
-            </androidx.cardview.widget.CardView>
-
-            <TextView
-                android:id="@+id/dlzka_slova_vysvetlenie_nadpis"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="20dp"
-                android:text="Dĺžka Slova"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/priklad_slovo_retazec_text" />
-
-            <TextView
-                android:id="@+id/dlzka_slova_vysvetlenie_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:text="@string/dlzka_slova_vysvetlenie"
-                android:textSize="18sp"
-                app:layout_constraintTop_toBottomOf="@+id/dlzka_slova_vysvetlenie_nadpis" />
-
-            <TextView
-                android:id="@+id/priklad_dlzka_slova"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="20dp"
-                android:text="Príklad"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/dlzka_slova_vysvetlenie_text" />
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/priklad_dlzka_slova_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                style="@style/Widget.Material3.CardView.Filled"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="5dp"
-                app:cardCornerRadius="20dp"
-                app:layout_constraintTop_toBottomOf="@id/priklad_dlzka_slova">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:text="@string/priklad_dlzka_slova"
-                    android:textColor="?attr/colorSecondary"
-                    android:textSize="18sp" />
-
-            </androidx.cardview.widget.CardView>
-
-            <TextView
-                android:id="@+id/jazyk_vysvetlenie_nadpis"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="20dp"
-                android:text="Jazyk"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/priklad_dlzka_slova_text" />
-
-            <TextView
-                android:id="@+id/jazyk_vysvetlenie_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:text="@string/jazyk_vysvetlenie"
-                android:textSize="18sp"
-                app:layout_constraintTop_toBottomOf="@+id/jazyk_vysvetlenie_nadpis" />
-
-            <TextView
-                android:id="@+id/priklad_jazyk"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="20dp"
-                android:text="Príklad"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/jazyk_vysvetlenie_text" />
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/priklad_jazyk_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                style="@style/Widget.Material3.CardView.Filled"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="5dp"
-                app:cardCornerRadius="20dp"
-                app:layout_constraintTop_toBottomOf="@id/priklad_jazyk">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:text="@string/priklad_jazyk"
-                    android:textColor="?attr/colorSecondary"
-                    android:textSize="18sp" />
-
-            </androidx.cardview.widget.CardView>
-
-            <TextView
-                android:id="@+id/operacie_s_jazykmi_nadpis"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="Operácie s jazykmi"
-                android:textAlignment="center"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@id/priklad_jazyk_text"/>
-
-            <TextView
-                android:id="@+id/zjednotenie_vysvetlenie_nadpis"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="20dp"
-                android:text="Zjednotenie"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/operacie_s_jazykmi_nadpis" />
-
-            <TextView
-                android:id="@+id/zjednotenie_vysvetlenie_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:text="@string/zjednotenie_vysvetlenie"
-                android:textSize="18sp"
-                app:layout_constraintTop_toBottomOf="@+id/zjednotenie_vysvetlenie_nadpis" />
-
-            <TextView
-                android:id="@+id/priklad_zjednotenie"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="20dp"
-                android:text="Príklad"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/zjednotenie_vysvetlenie_text" />
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/priklad_zjednotenie_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                style="@style/Widget.Material3.CardView.Filled"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="5dp"
-                app:cardCornerRadius="20dp"
-                app:layout_constraintTop_toBottomOf="@id/priklad_zjednotenie">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:text="@string/priklad_zjednotenie"
-                    android:textColor="?attr/colorSecondary"
-                    android:textSize="18sp" />
-
-            </androidx.cardview.widget.CardView>
-
-            <TextView
-                android:id="@+id/prienik_vysvetlenie_nadpis"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="20dp"
-                android:text="Prienik"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/priklad_zjednotenie_text" />
-
-            <TextView
-                android:id="@+id/prienik_vysvetlenie_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:text="@string/prienik_vysvetlenie"
-                android:textSize="18sp"
-                app:layout_constraintTop_toBottomOf="@+id/prienik_vysvetlenie_nadpis" />
-
-            <TextView
-                android:id="@+id/priklad_prienik"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="20dp"
-                android:text="Príklad"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/prienik_vysvetlenie_text" />
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/priklad_prienik_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                style="@style/Widget.Material3.CardView.Filled"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="5dp"
-                app:cardCornerRadius="20dp"
-                app:layout_constraintTop_toBottomOf="@id/priklad_prienik">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:text="@string/priklad_prienik"
-                    android:textColor="?attr/colorSecondary"
-                    android:textSize="18sp" />
-
-            </androidx.cardview.widget.CardView>
-
-            <TextView
-                android:id="@+id/zretazenie_vysvetlenie_nadpis"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="20dp"
-                android:text="Zreťazenie"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/priklad_prienik_text" />
-
-            <TextView
-                android:id="@+id/zretazenie_vysvetlenie_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:text="@string/zretazenie_vysvetlenie"
-                android:textSize="18sp"
-                app:layout_constraintTop_toBottomOf="@+id/zretazenie_vysvetlenie_nadpis" />
-
-            <TextView
-                android:id="@+id/priklad_zretazenie"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="20dp"
-                android:text="Príklad"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/zretazenie_vysvetlenie_text" />
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/priklad_zretazenie_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                style="@style/Widget.Material3.CardView.Filled"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="5dp"
-                app:cardCornerRadius="20dp"
-                app:layout_constraintTop_toBottomOf="@id/priklad_zretazenie">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:text="@string/priklad_zretazenie"
-                    android:textColor="?attr/colorSecondary"
-                    android:textSize="18sp" />
-
-            </androidx.cardview.widget.CardView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="\n\n"
-                app:layout_constraintTop_toBottomOf="@id/priklad_zretazenie_text"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
