@@ -16,5 +16,9 @@
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/zasobnikovy_automat"
             android:title="Zásobníkové Automaty"/>
+        <item
+            android:id="@+id/nav_gramatika"
+            android:icon="@drawable/gramatika"
+            android:title="Gramatika"/>
     </group>
 </menu>

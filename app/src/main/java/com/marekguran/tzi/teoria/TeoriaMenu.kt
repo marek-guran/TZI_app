@@ -28,7 +28,7 @@ class TeoriaMenu : AppCompatActivity() {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = Builder(
-            R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow
+            R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_gramatika
         )
             .setOpenableLayout(drawer)
             .build()

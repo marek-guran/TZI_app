@@ -1,4 +1,4 @@
-package com.marekguran.tzi.ui.slideshow
+package com.marekguran.tzi.teoria
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,18 +6,23 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.marekguran.tzi.databinding.FragmentSlideshowBinding
+import com.marekguran.tzi.databinding.FragmentHomeBinding
+import com.marekguran.tzi.ui.home.HomeViewModel
 
-class SlideshowFragment : Fragment() {
-    private var binding: FragmentSlideshowBinding? = null
+class Abeceda : Fragment() {
+    private var binding: FragmentHomeBinding? = null
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
-        val slideshowViewModel = ViewModelProvider(this).get(
-            SlideshowViewModel::class.java
+        val homeViewModel = ViewModelProvider(this).get(
+            HomeViewModel::class.java
         )
-        binding = FragmentSlideshowBinding.inflate(inflater, container, false)
+        binding = FragmentHomeBinding.inflate(
+            inflater,
+            container,
+            false
+        )
         return binding!!.root
     }
 
