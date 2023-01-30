@@ -6,15 +6,15 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.marekguran.tzi.databinding.FragmentSlideshowBinding
+import com.marekguran.tzi.databinding.FragmentZasobnikovyAutomatBinding
 
 class ZasobnikoveAutomaty : Fragment() {
-    private var binding: FragmentSlideshowBinding? = null
+    private var binding: FragmentZasobnikovyAutomatBinding? = null
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentSlideshowBinding.inflate(inflater, container, false)
+        binding = FragmentZasobnikovyAutomatBinding.inflate(inflater, container, false)
         return binding!!.root
     }
 
