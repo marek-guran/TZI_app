@@ -157,4 +157,9 @@ class Kvizy : AppCompatActivity() {
             }
         }
     }
+    @Deprecated("Deprecated in Java")
+    override fun onBackPressed() {
+        startActivity(Intent(this@Kvizy, MainActivity::class.java))
+        finish()
+    }
 }
