@@ -25,6 +25,12 @@
         android:theme="@style/Theme.TeoretickéZákladyInformatiky"
         tools:targetApi="33">
         <activity
+            android:name=".testy.Testy"
+            android:exported="false" />
+        <activity
+            android:name=".priklady.Priklady"
+            android:exported="false" />
+        <activity
             android:name=".kvizy.Kvizy"
             android:exported="false" />
         <activity
@@ -33,85 +39,85 @@
             android:label="@string/title_activity_teoria_menu"
             android:theme="@style/Theme.TeoretickéZákladyInformatiky.NoActionBar" />
         <activity
-            android:name=".operacieNadJazykmi.OperacieNadJazykmi10"
+            android:name=".kvizy.operacieNadJazykmi.OperacieNadJazykmi10"
             android:exported="false" />
         <activity
-            android:name=".operacieNadJazykmi.OperacieNadJazykmi9"
+            android:name=".kvizy.operacieNadJazykmi.OperacieNadJazykmi9"
             android:exported="false" />
         <activity
-            android:name=".operacieNadJazykmi.OperacieNadJazykmi8"
+            android:name=".kvizy.operacieNadJazykmi.OperacieNadJazykmi8"
             android:exported="false" />
         <activity
-            android:name=".operacieNadJazykmi.OperacieNadJazykmi7"
+            android:name=".kvizy.operacieNadJazykmi.OperacieNadJazykmi7"
             android:exported="false" />
         <activity
-            android:name=".operacieNadJazykmi.OperacieNadJazykmi6"
+            android:name=".kvizy.operacieNadJazykmi.OperacieNadJazykmi6"
             android:exported="false" />
         <activity
-            android:name=".operacieNadJazykmi.OperacieNadJazykmi5"
+            android:name=".kvizy.operacieNadJazykmi.OperacieNadJazykmi5"
             android:exported="false" />
         <activity
-            android:name=".operacieNadJazykmi.OperacieNadJazykmi4"
+            android:name=".kvizy.operacieNadJazykmi.OperacieNadJazykmi4"
             android:exported="false" />
         <activity
-            android:name=".operacieNadJazykmi.OperacieNadJazykmi3"
+            android:name=".kvizy.operacieNadJazykmi.OperacieNadJazykmi3"
             android:exported="false" />
         <activity
-            android:name=".operacieNadJazykmi.OperacieNadJazykmi2"
+            android:name=".kvizy.operacieNadJazykmi.OperacieNadJazykmi2"
             android:exported="false" />
         <activity
-            android:name=".operacieNadJazykmi.OperacieNadJazykmi1"
+            android:name=".kvizy.operacieNadJazykmi.OperacieNadJazykmi1"
             android:exported="false" />
         <activity
-            android:name=".konecnyAutomat.KonecnyAutomat7"
+            android:name=".kvizy.konecnyAutomat.KonecnyAutomat7"
             android:exported="false" />
         <activity
-            android:name=".konecnyAutomat.KonecnyAutomat6"
+            android:name=".kvizy.konecnyAutomat.KonecnyAutomat6"
             android:exported="false" />
         <activity
-            android:name=".konecnyAutomat.KonecnyAutomat5"
+            android:name=".kvizy.konecnyAutomat.KonecnyAutomat5"
             android:exported="false" />
         <activity
-            android:name=".konecnyAutomat.KonecnyAutomat4"
+            android:name=".kvizy.konecnyAutomat.KonecnyAutomat4"
             android:exported="false" />
         <activity
-            android:name=".konecnyAutomat.KonecnyAutomat3"
+            android:name=".kvizy.konecnyAutomat.KonecnyAutomat3"
             android:exported="false" />
         <activity
-            android:name=".konecnyAutomat.KonecnyAutomat2"
+            android:name=".kvizy.konecnyAutomat.KonecnyAutomat2"
             android:exported="false" />
         <activity
-            android:name=".konecnyAutomat.KonecnyAutomat1"
+            android:name=".kvizy.konecnyAutomat.KonecnyAutomat1"
             android:exported="false" />
         <activity
-            android:name=".abecedaSlovoJazyk.AbecedaSlovoJazyk10"
+            android:name=".kvizy.abecedaSlovoJazyk.AbecedaSlovoJazyk10"
             android:exported="false" />
         <activity
-            android:name=".abecedaSlovoJazyk.AbecedaSlovoJazyk9"
+            android:name=".kvizy.abecedaSlovoJazyk.AbecedaSlovoJazyk9"
             android:exported="false" />
         <activity
-            android:name=".abecedaSlovoJazyk.AbecedaSlovoJazyk8"
+            android:name=".kvizy.abecedaSlovoJazyk.AbecedaSlovoJazyk8"
             android:exported="false" />
         <activity
-            android:name=".abecedaSlovoJazyk.AbecedaSlovoJazyk7"
+            android:name=".kvizy.abecedaSlovoJazyk.AbecedaSlovoJazyk7"
             android:exported="false" />
         <activity
-            android:name=".abecedaSlovoJazyk.AbecedaSlovoJazyk6"
+            android:name=".kvizy.abecedaSlovoJazyk.AbecedaSlovoJazyk6"
             android:exported="false" />
         <activity
-            android:name=".abecedaSlovoJazyk.AbecedaSlovoJazyk5"
+            android:name=".kvizy.abecedaSlovoJazyk.AbecedaSlovoJazyk5"
             android:exported="false" />
         <activity
-            android:name=".abecedaSlovoJazyk.AbecedaSlovoJazyk4"
+            android:name=".kvizy.abecedaSlovoJazyk.AbecedaSlovoJazyk4"
             android:exported="false" />
         <activity
-            android:name=".abecedaSlovoJazyk.AbecedaSlovoJazyk3"
+            android:name=".kvizy.abecedaSlovoJazyk.AbecedaSlovoJazyk3"
             android:exported="false" />
         <activity
-            android:name=".abecedaSlovoJazyk.AbecedaSlovoJazyk2"
+            android:name=".kvizy.abecedaSlovoJazyk.AbecedaSlovoJazyk2"
             android:exported="false" />
         <activity
-            android:name=".abecedaSlovoJazyk.AbecedaSlovoJazyk1"
+            android:name=".kvizy.abecedaSlovoJazyk.AbecedaSlovoJazyk1"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

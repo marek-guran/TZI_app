@@ -11,7 +11,9 @@ import android.view.View.OnFocusChangeListener
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import com.marekguran.tzi.kvizy.Kvizy
+import com.marekguran.tzi.priklady.Priklady
 import com.marekguran.tzi.teoria.TeoriaMenu
+import com.marekguran.tzi.testy.Testy
 
 class MainActivity : AppCompatActivity() {
     @SuppressLint("ClickableViewAccessibility")
@@ -27,11 +29,11 @@ class MainActivity : AppCompatActivity() {
             finish()
         }
         priklady.setOnClickListener {
-            startActivity(Intent(this@MainActivity, priklady::class.java))
+            startActivity(Intent(this@MainActivity, Priklady::class.java))
             finish()
         }
         testy.setOnClickListener {
-            startActivity(Intent(this@MainActivity, testy::class.java))
+            startActivity(Intent(this@MainActivity, Testy::class.java))
             finish()
         }
         teoria.setOnClickListener {

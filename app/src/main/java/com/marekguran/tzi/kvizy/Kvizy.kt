@@ -11,9 +11,9 @@ import android.widget.ImageButton
 import androidx.cardview.widget.CardView
 import com.marekguran.tzi.MainActivity
 import com.marekguran.tzi.R
-import com.marekguran.tzi.abecedaSlovoJazyk.AbecedaSlovoJazyk1
-import com.marekguran.tzi.konecnyAutomat.KonecnyAutomat1
-import com.marekguran.tzi.operacieNadJazykmi.OperacieNadJazykmi1
+import com.marekguran.tzi.kvizy.abecedaSlovoJazyk.AbecedaSlovoJazyk1
+import com.marekguran.tzi.kvizy.konecnyAutomat.KonecnyAutomat1
+import com.marekguran.tzi.kvizy.operacieNadJazykmi.OperacieNadJazykmi1
 
 class Kvizy : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
