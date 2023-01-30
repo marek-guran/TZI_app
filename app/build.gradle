@@ -11,8 +11,8 @@ android {
         applicationId "com.marekguran.tzi"
         minSdk 23
         targetSdk 33
-        versionCode 9
-        versionName "1.8"
+        versionCode 10
+        versionName "2.01 - Beta"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
