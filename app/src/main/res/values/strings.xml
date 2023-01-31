@@ -88,4 +88,8 @@
 
     <string name="klasifikacia_gramatik_text">Nech G = (N, T, P, S) je gramatika. Potom G je:\n\n● Gramatika typu O (neobmedzená / frázová),\nak na prepisovacie pravidlá nekladieme žiadne obmezenie\n\n● Gramatika typu 1 (kontextová),\nak každé prepisovacie pravidlo z P má tvar α → β, pričom |α|≤|β|\nα ∈(N ∪ T)* N (N ∪ T)*, β ∈(N ∪ T)⁺\n\n● Gramatika typu 2 (bezkontextová),\nak každé prepisovacie pravidlo z P má tvar A  β,\npričom A ∈ N, β ∈ (N ∪ T)⁺\n\n● Gramatika typu 3 (regulárna),\nak každé prepisovacie pravidlo z P má tvar A → bB  alebo A → b,\npričom A, B ∈ N, b ∈ T
     </string>
+    <string name="hierarchia_text">Každá regulárna gramatika G je bezkontextová.\n\nKaždá bezkontextová gramatika G je kontextová.\n\nKaždá kontextová gramatika G je gramatikou bez obmedzenia.
+    </string>
+    <string name="hierarchia_tried_text">Jazyk nazývame regulárny (angl. regular), ak je možné ho generovať regulárnou gramatikou.\n\nJazyk nazývame bezkontextový (angl. context free), ak je možné ho generovať bezkontextovou gramatikou.\n\nJazyk nazývame kontextový (angl. context sensitive), ak je možné ho generovať kontextovou gramatikou.\n\nJazyk nazývame bez obmedzenia (angl. recursive enumerable), ak je možné ho generovať gramatikou bez obmedzenia.
+</string>
 </resources>
