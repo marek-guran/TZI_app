@@ -335,7 +335,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/hierarchia_tried_text" />
 
             <TableLayout
-                android:id="@+id/rozvrh"
+                android:id="@+id/tabulka_chomsky"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -583,6 +583,12 @@
                 </TableRow>
 
             </TableLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n\n"
+                app:layout_constraintTop_toBottomOf="@id/tabulka_chomsky"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
