@@ -85,4 +85,7 @@
 </string>
     <string name="priklad_jednoznacnost_gramatiky">G=({A,S},{0,1},P,S)\nP={S → AB; A → 0AB |0; B → 1}\n\nĽavá derivácia:\nS → AB → 0ABB → 00BB → 001B → 0011\n\nPravá derivácia:\nS → AB → A1 → 0AB1 → 0A11 → 0011
     </string>
+
+    <string name="klasifikacia_gramatik_text">Nech G = (N, T, P, S) je gramatika. Potom G je:\n\n● Gramatika typu O (neobmedzená / frázová),\nak na prepisovacie pravidlá nekladieme žiadne obmezenie\n\n● Gramatika typu 1 (kontextová),\nak každé prepisovacie pravidlo z P má tvar α → β, pričom |α|≤|β|\nα ∈(N ∪ T)* N (N ∪ T)*, β ∈(N ∪ T)⁺\n\n● Gramatika typu 2 (bezkontextová),\nak každé prepisovacie pravidlo z P má tvar A  β,\npričom A ∈ N, β ∈ (N ∪ T)⁺\n\n● Gramatika typu 3 (regulárna),\nak každé prepisovacie pravidlo z P má tvar A → bB  alebo A → b,\npričom A, B ∈ N, b ∈ T
+    </string>
 </resources>

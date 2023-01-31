@@ -235,6 +235,39 @@
 
             </androidx.cardview.widget.CardView>
 
+            <TextView
+                android:id="@+id/chomsky_nadpis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Chomského hierarchia gramatík a jazykov"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/priklad_jednoznacnost_gramatiky_text" />
+
+            <TextView
+                android:id="@+id/klasifikacia_gramatik_nadpis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="Klasifikácia gramatík"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/chomsky_nadpis" />
+
+            <TextView
+                android:id="@+id/klasifikacia_gramatik_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/klasifikacia_gramatik_text"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/klasifikacia_gramatik_nadpis" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
