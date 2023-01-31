@@ -240,7 +240,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Chomského hierarchia gramatík a jazykov"
+                android:text="Chomského hierarchia gramatík\na jazykov"
                 android:textAlignment="center"
                 android:textSize="24sp"
                 android:textStyle="bold"
