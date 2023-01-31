@@ -25,6 +25,33 @@
         android:theme="@style/Theme.TeoretickéZákladyInformatiky"
         tools:targetApi="33">
         <activity
+            android:name=".kvizy.chomskehoHierarchia.ChomskehoHierarchia9"
+            android:exported="false" />
+        <activity
+            android:name=".kvizy.chomskehoHierarchia.ChomskehoHierarchia8"
+            android:exported="false" />
+        <activity
+            android:name=".kvizy.chomskehoHierarchia.ChomskehoHierarchia7"
+            android:exported="false" />
+        <activity
+            android:name=".kvizy.chomskehoHierarchia.ChomskehoHierarchia6"
+            android:exported="false" />
+        <activity
+            android:name=".kvizy.chomskehoHierarchia.ChomskehoHierarchia5"
+            android:exported="false" />
+        <activity
+            android:name=".kvizy.chomskehoHierarchia.ChomskehoHierarchia4"
+            android:exported="false" />
+        <activity
+            android:name=".kvizy.chomskehoHierarchia.ChomskehoHierarchia3"
+            android:exported="false" />
+        <activity
+            android:name=".kvizy.chomskehoHierarchia.ChomskehoHierarchia2"
+            android:exported="false" />
+        <activity
+            android:name=".kvizy.chomskehoHierarchia.ChomskehoHierarchia1"
+            android:exported="false" />
+        <activity
             android:name=".testy.Testy"
             android:exported="false" />
         <activity

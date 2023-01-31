@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kvizy.chomskehoHierarchia.ChomskehoHierarchia8">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?attr/colorSurfaceVariant"/>
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/domov"
+        android:background="?attr/colorSurfaceVariant"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <TextView
+        android:id="@+id/pocet_otazok_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Otázka: 8/9"
+        android:textColor="?attr/colorSecondary"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/otazka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Majme gramatiku G s pravidlami S → aBcD, B → Bb / b, D → DS / d. Určite slovo, ktoré nepatrí do L(G)."
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/pocet_otazok_text"/>
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:text="abcd"
+        android:layout_below="@id/otazka"
+        android:textSize="18sp"
+        style="@style/Widget.Material3.Button"/>
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="text"
+        android:text="abbcdbc"
+        android:layout_below="@id/btn_1"
+        android:textSize="18sp"
+        style="@style/Widget.Material3.Button"/>
+
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="text"
+        android:text="abcdabcd"
+        android:layout_below="@id/btn_2"
+        android:textSize="18sp"
+        style="@style/Widget.Material3.Button"/>
+
+    <Button
+        android:id="@+id/btn_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="text"
+        android:text="abbcdabcd"
+        android:layout_below="@id/btn_3"
+        android:textSize="18sp"
+        style="@style/Widget.Material3.Button"/>
+
+    <TextView
+        android:id="@+id/explanation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:text="Slovo abbcdbc nepatrí do L(G). Nedá sa odvodiť zo štartovacieho symbolu S."
+        android:layout_below="@id/btn_4"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Ďalej"
+        android:layout_below="@id/explanation"
+        android:textSize="18sp"
+        style="@style/Widget.Material3.Button"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Späť"
+        android:layout_below="@id/explanation"
+        android:textSize="18sp"
+        style="@style/Widget.Material3.Button"/>
+
+</RelativeLayout>

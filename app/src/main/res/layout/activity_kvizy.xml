@@ -124,6 +124,34 @@
 
             </androidx.cardview.widget.CardView>
 
+            <androidx.cardview.widget.CardView
+                android:id="@+id/chomskeho_hierarchia"
+                style="@style/Widget.Material3.CardView.Filled"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/chomskeho_hierarchia" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:text="Chomského hierarchia"
+                    android:textColor="?attr/colorSecondary" />
+
+            </androidx.cardview.widget.CardView>
+
         </GridLayout>
     </RelativeLayout>
 </RelativeLayout>
