@@ -81,6 +81,160 @@
 
             </androidx.cardview.widget.CardView>
 
+            <TextView
+                android:id="@+id/mnozina_pravidiel_nadpis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="Množina pravidiel"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/priklad_gramatika_text" />
+
+            <TextView
+                android:id="@+id/mnozina_pravidiel_vysvetlenie_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/mnozina_pravidiel"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/mnozina_pravidiel_nadpis" />
+
+            <TextView
+                android:id="@+id/konvencie_zapisu_nadpis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="Užitočné konvencie zápisu (Backus-Naurova forma - BNF)"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/mnozina_pravidiel_vysvetlenie_text" />
+
+            <TextView
+                android:id="@+id/konvencie_zapisu_vysvetlenie_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/konvencie_zapisu"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/konvencie_zapisu_nadpis" />
+
+            <TextView
+                android:id="@+id/pouzitie_gramatiky_nadpis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="Použitie gramatiky"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/konvencie_zapisu_vysvetlenie_text" />
+
+            <TextView
+                android:id="@+id/pouzitie_gramatiky_vysvetlenie_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/pouzitie_gramatiky"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/pouzitie_gramatiky_nadpis" />
+
+            <TextView
+                android:id="@+id/priklady_gramatika"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="Príklady"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/pouzitie_gramatiky_vysvetlenie_text" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/priklady_gramatika_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.Material3.CardView.Filled"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintTop_toBottomOf="@id/priklady_gramatika">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/gramatika_priklady"
+                    android:textColor="?attr/colorSecondary"
+                    android:textSize="18sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/jednoznacnost_gramatiky_nadpis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="Jednoznačnosť  gramatiky"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/priklady_gramatika_text" />
+
+            <TextView
+                android:id="@+id/jednoznacnost_gramatiky_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/jednoznacnost_gramatiky_text"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/jednoznacnost_gramatiky_nadpis" />
+
+            <TextView
+                android:id="@+id/priklad_jednoznacnost_gramatiky"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="Príklad"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/jednoznacnost_gramatiky_text" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/priklad_jednoznacnost_gramatiky_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.Material3.CardView.Filled"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintTop_toBottomOf="@id/priklad_jednoznacnost_gramatiky">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/priklad_jednoznacnost_gramatiky"
+                    android:textColor="?attr/colorSecondary"
+                    android:textSize="18sp" />
+
+            </androidx.cardview.widget.CardView>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

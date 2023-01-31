@@ -73,4 +73,16 @@
     </string>
     <string name="priklad_gramatika">Gramatika G = ({A, S}, {a, b}, P, S), pričom:\nA, S - neterminály\na, b – terminály\nP – pravidlá\nP = {\n       S → aA,\n       A → aAb\n       A → ε = prázdne slovo}\nS - štartovací symbol\n\n● Opíšte jazyk generovaný touto gramatikou
 </string>
+    <string name="mnozina_pravidiel">P - množina prepisovacích pravidiel, ktorá je konečnou podmnožinou množiny\n\n(N ∪ T)*N (N ∪ T)* x (N ∪ T)*\n\n..N ... Znamená aspoň jeden neterminál na ľavej strane pravidla\nNapríklad:\nA → aAb, S → bS, S → b, aA → aAb\na → aA  nemôže!!!
+</string>
+    <string name="konvencie_zapisu">Neterminály označujeme veľkými latinskými písmenami:\nA, B, S, T,...\n\nTerminály označujeme malými latinskými písmenami:\na, b, c ...\n\nSlová zložené z neterminálov a terminálov označujeme malými gréckymi písmenami:\nα,β...\nα = aAb, α = aS, β = aaa,\n\nPrepisovacie pravidla s rovnakou ľavou stranou, t.j.\nα→β₁, α→β₂, …, α→β^k\nzapíšeme ako   α → β₁| β₂| … | β^k
+</string>
+    <string name="pouzitie_gramatiky">Základom generovania viet jazyka sú prepisovacie pravidlá.\n\nNech G=(N, T, P, S) gramatika. Potom nad množinou (N ∪ T)* definujeme reláciu derivácie ⇒G takto:\n\nAk αβχ ∈(N ∪ T)* a αδχ ∈(N ∪ T)*, potom dané reťazce sú v relácii: \n⇒G, tj. αβχ ⇒G αδχ, pokiaľ v P existuje pravidlo β→δ.\n\nAk α,β ∈(N ∪ T)* a platí  α⇒Gβ, potom hovoríme, že reťazec β je možné v jednom kroku odvodiť (derivovať) z reťazca α (priamo odvodiť).
+    </string>
+    <string name="gramatika_priklady">Príklad obvodenia slova:\n\nGramatika G = ({A,S}, {a,b},P,S), pričom:\npravidlá P = {\n                     S → aA,\n                     A → aAb\n                     A → ε}\n\nOdvodenie slova:\nS⇒aA⇒aaAb⇒aaaAbb⇒aaabb\n\n\n\nPríklad gramatiky a jazykov:\n\nAký jazyk generuje táto gramatika?\n\nG=({S}, {0,1}, P, S)\nP = {S → 0S | 1S | 0 | 1 }\n\n\nGramatika generuje jazyk:\nL(G) = {0,1}⁺
+    </string>
+    <string name="jednoznacnost_gramatiky_text">Deriváciu α₀,α₁,α₂, kde každú priamu deriváciu αi⇒αi+1 pre 0≤i\u003Ck  realizujeme tak, že vo vetnej forme αi nahradzujeme prvý neterminál zľava (sprava), nazývame ľavá (pravá) derivácia.
+</string>
+    <string name="priklad_jednoznacnost_gramatiky">G=({A,S},{0,1},P,S)\nP={S → AB; A → 0AB |0; B → 1}\n\nĽavá derivácia:\nS → AB → 0ABB → 00BB → 001B → 0011\n\nPravá derivácia:\nS → AB → A1 → 0AB1 → 0A11 → 0011
+    </string>
 </resources>
